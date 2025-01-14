@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    background-color: #0f655ce0;
+    color: #0d0d0d;
+    padding: 10px 20px;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .menu a {
+    color: rgb(8, 8, 8);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.navbar .menu a:hover {
+    text-decoration: underline;
+}
+
+/* Cards Section */
+.main-content {
+    display: grid;
+    grid-template-rows: auto;
+    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+    gap: 20px;
+    padding: 20px;
+    background-color: #323847;
+}
+
+.card {
+    background-color: #c192a5;
+    border: 1px solid #070707;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: justify;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Footer */
+.footer {
+    background-color: #0f655ce0;
+    color: rgb(12, 12, 12);
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+}
